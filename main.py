@@ -1,14 +1,3 @@
-"""
-╔══════════════════════════════════════════════╗
-║   Collaborative Multi-Agent System           ║
-║   Topic 1 — Agentic AI Projects 2026         ║
-║   Works with Python 3.14 | Powered by Groq   ║
-╚══════════════════════════════════════════════╝
-
-Workflow:
-  🔍 Researcher → ✍️ Writer → ✅ Reviewer
-"""
-
 import os
 from agents.researcher import researcher_agent
 from agents.writer import writer_agent
