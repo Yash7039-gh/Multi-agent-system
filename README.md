@@ -64,17 +64,3 @@ multi-agent-v2/
 - **Groq API** (free, ultra fast LLaMA 3)
 - **python-dotenv**
 
----
-
-## 🗺️ Part of: Top 5 Agentic AI Projects 2026
-
-| # | Project | Status |
-|---|---------|--------|
-| 1 | **Collaborative Multi-Agent System** | ✅ Done |
-| 2 | Coming soon | 🔜 |
-| 3 | Coming soon | 🔜 |
-| 4 | Coming soon | 🔜 |
-| 5 | Coming soon | 🔜 |
-
----
-MIT License
