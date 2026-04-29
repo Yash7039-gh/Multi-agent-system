@@ -1,12 +1,5 @@
-# 🤖 Collaborative Multi-Agent System
-> **Topic 1 of 5 — Agentic AI Projects 2026**
-> ✅ Works with Python 3.14 | No CrewAI needed
-
----
-
 ## 🧠 How It Works
 
-```
 You enter a topic
       │
       ▼
