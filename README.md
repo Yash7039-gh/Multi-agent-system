@@ -1,77 +1,87 @@
-Project Overview
-This project is a Collaborative Multi-Agent System where multiple AI agents work together to research, write, and review a professional report on any given topic. Each agent has a specific role, communicates results to the next agent, and the system produces a final polished Markdown report automatically.
-Project Name	Collaborative Multi-Agent System
-Topic Number	Topic 1 of 5
-Series	Agentic AI Projects 2026
-Language	Python 3.14+
-AI Model	LLaMA 3.3 70B (via Groq)
-API Used	Groq API (Free Tier)
-Framework	Pure Python — No CrewAI needed
-Output	Markdown Report (.md file)
-How It Works
-The system runs 3 AI agents sequentially. Each agent completes its task and passes results to the next:
+# 🤖 Collaborative Multi-Agent System
+> **Topic 1 of 5 — Agentic AI Projects 2026**
+> ✅ Works with Python 3.14 | No CrewAI needed
 
-User enters a Topic
-↓
-🔍 Agent 1: Researcher  →  Gathers facts, trends & data
-↓
-✍️ Agent 2: Writer  →  Writes a structured report
-↓
-✅ Agent 3: Reviewer  →  Reviews, scores & polishes
-↓
-📄 Final Report saved to output/final_report.md
+---
 
-🤖 The 3 Agents
+## 🧠 How It Works
 
-Agent 1 — Researcher
-•	Role: Senior Research Analyst
-•	Finds key facts, statistics, trends and expert opinions
-•	Organizes findings into structured research notes
-•	Output: Detailed notes (500+ words)
+```
+You enter a topic
+      │
+      ▼
+🔍 Researcher Agent  →  Gathers facts & trends
+      │
+      ▼
+✍️  Writer Agent     →  Writes a structured report
+      │
+      ▼
+✅ Reviewer Agent    →  Reviews & scores the report
+      │
+      ▼
+📄 output/final_report.md
+```
 
-Agent 2 — Writer
-•	Role: Expert Technical Writer
-•	Transforms research notes into a professional report
-•	Follows a structured format with all sections
-•	Output: Full Markdown report (800-1200 words)
+---
 
-Agent 3 — Reviewer
-•	Role: Senior Editor & Quality Reviewer
-•	Checks accuracy, clarity, structure and grammar
-•	Fixes issues and gives a quality score (e.g. 9/10)
-•	Output: Final polished Markdown report
+## 🚀 Quickstart
 
-📄 Report Output Structure
-•	Quality Score (e.g. ⭐ 9/10)
-•	Reviewer Notes
-•	Title & Executive Summary
-•	Introduction
-•	Key Findings
-•	Real-World Use Cases
-•	Challenges & Limitations
-•	Conclusion & Future Outlook
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-🛠️ Tech Stack
+### 2. Get FREE Groq API key
+👉 https://console.groq.com → Sign up → Create API Key
 
-Python	3.14+ (Latest — no version conflicts)
-Groq API	Free tier — Ultra fast LLaMA 3.3 inference
-Model	llama-3.3-70b-versatile
-python-dotenv	For secure API key management
-requests	HTTP library
+### 3. Setup .env file
+```bash
+# Rename .env.example to .env
+# Open .env and paste your key:
+GROQ_API_KEY=your_key_here
+```
 
-📁 Project Structure
-•	main.py — Entry point, runs all 3 agents
-•	llm_config.py — Groq API connection
-•	agents/researcher.py — Agent 1
-•	agents/writer.py — Agent 2
-•	agents/reviewer.py — Agent 3
-•	requirements.txt — Only 3 packages
-•	.env — Your secret API keys (never upload this!)
-•	output/final_report.md — Generated report
+### 4. Run!
+```bash
+python main.py
+```
 
-💡 Key Concepts Demonstrated
-•	Multi-Agent Collaboration — agents pass results to each other
-•	Task Delegation — each agent has one clear responsibility
-•	Structured Workflow — sequential pipeline (Research → Write → Review)
-•	Role-Based Agents — each agent has a unique role and backstory
-•	Autonomous Execution — runs end-to-end with no human input
+---
+
+## 📁 Project Structure
+
+```
+multi-agent-v2/
+├── main.py              ← Run this
+├── llm_config.py        ← Groq API setup
+├── requirements.txt     ← Only 3 packages!
+├── .env.example         ← API key template
+├── agents/
+│   ├── researcher.py    ← Agent 1
+│   ├── writer.py        ← Agent 2
+│   └── reviewer.py      ← Agent 3
+└── output/
+    └── final_report.md  ← Generated report
+```
+
+---
+
+## ⚙️ Tech Stack
+- **Python 3.14+** ✅
+- **Groq API** (free, ultra fast LLaMA 3)
+- **python-dotenv**
+
+---
+
+## 🗺️ Part of: Top 5 Agentic AI Projects 2026
+
+| # | Project | Status |
+|---|---------|--------|
+| 1 | **Collaborative Multi-Agent System** | ✅ Done |
+| 2 | Coming soon | 🔜 |
+| 3 | Coming soon | 🔜 |
+| 4 | Coming soon | 🔜 |
+| 5 | Coming soon | 🔜 |
+
+---
+MIT License
